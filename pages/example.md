@@ -1,12 +1,10 @@
 ---
 title: Example Page
 nav: Example
-nav_order: 1
+nav_order: 7
 ---
 
 --------------
-
-{% include figure.html img="assets/img/healthcare-platform-opendei.jpeg" alt="EHR Image" caption="[Image from Tuuring.com](https://tuuring.com/app/uploads/2021/03/healthcare-platform-opendei.jpg)." %}
 
 ## Heading Two 
 
@@ -17,7 +15,6 @@ Code can be highlighted with `backticks`.
 
 Hyperlinks look like this [GitHub Help](https://help.github.com/).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cMd0vPxAtB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Lists 
 

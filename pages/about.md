@@ -1,7 +1,7 @@
 ---
 title: About This Template
 nav: About
-nav_order: 2
+nav_order: 7
 ---
 
 [bootstrap-template](https://github.com/thecdil/bootstrap-template) is a basic template repository to create a [Bootstrap](https://getbootstrap.com/) site using Jekyll on GitHub Pages (or where every you want to host it). 
@@ -16,3 +16,5 @@ The basic steps for using bootstrap-template are:
 4. use customization options
 
 See [docs/create-website.md](https://github.com/thecdil/bootstrap-template/blob/main/docs/create-website.md) for details!
+
+{% include image.html img="assets/img/kiteprof.jpg" alt="Profile Pic" %}
