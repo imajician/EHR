@@ -1,37 +1,15 @@
----
-layout: parse
----
-<!DOCTYPE html>
-<html lang="{{ site.lang }}">
-
-  <!-- Head -->
-  <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />
-  {%- endif -%}
-  {% include head.html %}
-  </head>
-
-  <!-- Body -->
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-
-    <!-- Header -->
-    {%- include header.html %}
-
-    <!-- Content -->
-    <div class="container mt-5">
-      {{ content }}
-    </div>
-
-    <!-- Footer -->
-    {%- include footer.html %}
-
-    <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
-    {% include scripts/misc.html %}
-    {% include scripts/mathjax.html %}
-    {% include scripts/analytics.html %}
-  </body>
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        {% include template/head.html %}
+    </head>
+    <body class="d-flex flex-column h-100">
+        <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+        {% include template/header.html %}
+        <main id="maincontent" role="main" aria-label="Content" class="mb-4 flex-shrink-0">
+        {{ content }}
+        </main>
+        {% include template/footer.html %}
+        {% include template/foot.html %}
+    </body>
 </html>

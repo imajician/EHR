@@ -1,17 +1,14 @@
-{%- assign path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
+{% comment %}
 
-<figure>
+    Figure include adds an image marked up using bootstrap, https://getbootstrap.com/docs/4.5/content/figures/
+    Options:
+    - "img" = the path and filename of the image located in this repo (e.g. "/media/example.png" ), or full url to image (required)
+    - "alt" = descriptive alt text for the image (highly recommended)
+    - "caption" = text for caption of the figure
+    - "width" = manually set width using options such as "50%" 
 
-  <picture>
-    {% for i in site.imagemagick.widths -%}
-      <source media="(max-width: {{ i }}px)" srcset="{{ path | relative_url }}-{{ i }}.webp" />
-    {% endfor -%}
-
-    <!-- Fallback to the original file -->
-    <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
-
-  </picture>
-
-  {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
-
+{% endcomment %}
+<figure class="figure text-center p-3 w-100">
+    <img src="{{ include.img | relative_url }}" alt="{{ include.alt }}" {% if include.width %}style="width:{{ include.width }};"{% endif %} class="figure-img img-fluid rounded">
+    {% if include.caption %}<figcaption class="figure-caption">{{ include.caption | markdownify }}</figcaption>{% endif %}
 </figure>
