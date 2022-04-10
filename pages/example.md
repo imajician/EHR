@@ -4,7 +4,9 @@ nav: Example
 nav_order: 1
 ---
 
-Write pages in Markdown.
+--------------
+
+{% include figure.html img="assets/img/healthcare-platform-opendei.jpeg" alt="EHR Image" caption="[Image from Tuuring.com](https://tuuring.com/app/uploads/2021/03/healthcare-platform-opendei.jpg)." %}
 
 ## Heading Two 
 
@@ -14,6 +16,8 @@ Font can be *Italic* or **Bold**.
 Code can be highlighted with `backticks`.
 
 Hyperlinks look like this [GitHub Help](https://help.github.com/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cMd0vPxAtB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Lists 
 
@@ -31,10 +35,6 @@ A numbered list is created using a number + `.`, like:
 2. four
 
 Horizontal rule:
-
---------------
-
-{% include figure.html img="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/VAN_CAT.png/480px-VAN_CAT.png" alt="white cat" caption="I found this [Cat image on Wikimedia](https://commons.wikimedia.org/wiki/File:VAN_CAT.png)." %}
 
 > A block quote.
 > Is like this.
