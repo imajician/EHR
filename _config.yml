@@ -10,7 +10,7 @@
 # SITE SETTINGS
 #
 title: EHR Meaningful Use
-description: "EHR Applications for Nurses"
+description: "Empower Nurses with the Meaningful Use of Electronic Health Record"
 year: 2022
 author: Minghao Ji 
 # add search box to navbar, true/false
@@ -42,7 +42,7 @@ google-analytics-id:
 # ROBOTS EXCLUDE [optional!]
 #
 # set noindex to true if you do NOT want Google to index your site
-# noindex: true 
+noindex: true 
 
 
 #######

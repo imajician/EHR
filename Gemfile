@@ -10,3 +10,5 @@ gem 'jekyll'
 #end
 
 gem "webrick", "~> 1.7"
+
+gem "jekyll-sitemap", "~> 1.4"
