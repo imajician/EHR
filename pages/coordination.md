@@ -1,7 +1,7 @@
 ---
 title: Care Coordination
 nav: Coordination
-nav_order: 2
+nav_order: 1
 ---
 
 ----------------
@@ -17,4 +17,4 @@ nav_order: 2
 <br />
 
 
-{% include video-embed.html youtubeid="ED3BY4gXDi0" caption="John Mattison" width=50 float="left" %}
+{% include video-embed.html youtubeid="ED3BY4gXDi0" caption="John Mattison" float="center" width=50 float="left" %}

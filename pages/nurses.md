@@ -1,7 +1,7 @@
 ---
 title: Meaningful Applications for Nurses
 nav: Nurses
-nav_order: 3
+nav_order: 2
 ---
 
 ----------------
